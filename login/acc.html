@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+        <script>
+                function validateForm() {
+                    var x = document.forms["myForm"]["email"].value;
+                    var atpos = x.indexOf("@");
+                    var dotpos = x.lastIndexOf(".");
+                    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+                        alert("Not a valid e-mail address");
+                        return false;
+                    }
+                }
+                </script>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>accounte</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link  href="../assets/css/bootstrap-datepicker.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <header id="header">
+            <nav class="left">
+                <a href="#menu"><span>Menu</span></a>
+            </nav>
+            <a href="index.html" class="logo">GDG SFAX</a>
+            <nav class="right">
+                <a href="#" class="button alt">Log in</a>
+            </nav>
+        </header>
+		<!-- Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="profile.html">profile</a></li>
+                <li><a href="../produit.html">produit</a></li>
+            </ul>
+            <ul class="actions vertical">
+                <li><a href="#" class="button fit">Login</a></li>
+            </ul>
+        </nav>
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+
+        <!-- Top content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1>
+                                 Login 
+                                </h1>
+                            <div class="description">
+                            
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                        	<div class="form-top">
+                        		<div class="form-top-left">
+                        			<h3>create accounte to gdg</h3>
+                            		<p>Enter your information:</p>
+                        		</div>
+                        		<div class="form-top-right">
+                        			<i class="fa fa-lock"></i>
+                        		</div>
+                            </div>
+                            <div class="form-bottom">
+			                    <form role="form" action="" method="post" class="login-form">
+			                    	<div class="form-group">
+			                    		<label class="sr-only" for="form-username">Username</label>
+			                        	<input type="text" name="form-username" placeholder="name user" class="form-username form-control" id="form-username">
+                                    </div>
+                                    <div class="form-group">
+			                    		<label class="sr-only" for="form-username">Username</label>
+			                        	<input type="text" name="form-username" placeholder="name" class="form-username form-control" id="form-username">
+                                    </div>
+                                   <div class="form-group">
+			                    		<label class="sr-only" for="form-username">Username</label>
+			                        	<input type="text" name="form-username" placeholder="prenom" class="form-username form-control" id="form-username">
+                                    </div>
+                                     <div class="form-group">
+                                            <label class="sr-only" for="form-username">aa</label>
+                                        <input data-provide="datepicker"placeholder="date naissance" class="form-username form-control" style="    background-color: #f6f6f6;
+                                        background-image: none;
+                                        border: 1px solid #1869a0;
+                                        border-radius: 4px;" >
+                                    </div>
+                                    
+                                    <div class="form-group">
+			                    		<label class="sr-only" for="form-username">Username</label>
+			             
+                                        <input id="MailClient" class="form-username form-control" name="MailClient" type="email" placeholder="Exemple : marcel.duchamp@mail.fr" title="Remplir ce champ est nécessaire pour que je puisse vous répondre" />
+                                    </div>
+                                    <div class="form-group">
+			                    		<label class="sr-only" for="form-username">Username</label>
+			                        	<input type="text" name="form-username" placeholder="CIN" class="form-username form-control" id="form-username">
+			                        </div>
+			                        <div class="form-group">
+			                        	<label class="sr-only" for="form-password">Password</label>
+			                        	<input type="TEXT" name="form-password" placeholder="ID CLUB" class="form-password form-control" id="form-password">
+                                    </div>
+                                    <div class="form-group">
+                                            <label class="sr-only" for="form-password">Password</label>
+                                            <input type="password" name="form-password" placeholder="PASSWORD" class="form-password form-control" id="form-password">
+                                        </div>
+                                        <div class="form-group">
+                                                <label class="sr-only" for="form-password">Password</label>
+                                                <input type="password" name="form-password" placeholder="CONFIR PASSWORD" class="form-password form-control" id="form-password">
+                                            </div>
+                                            <DIV>
+                                            <input type="file" name="fileToUpload" id="fileToUpload" class="form-username form-control" style="    background-color: #f6f6f6;
+                                            background-image: none;
+                                            border: 1px solid #1869a0;
+                                            border-radius: 4px;" >
+                                        </DIV>
+			                        <button type="submit" class="btn">Sign in!</button>
+                                </form>
+                                <H3>if you don't have an account <A href="acc.html" >click here</A></H3>
+		                    </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            
+        </div>
+
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="../assets/js/bootstrap-datepicker.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>
